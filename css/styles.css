@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Lines&display=swap");
+.fondo-gris {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(236, 86, 59);
+  opacity: 85%;
+  border-radius: 0.5rem;
+}
+
+.menu {
+  justify-content: center;
+  display: flex;
+  background-color: rgb(243, 83, 34);
+  opacity: 85%;
+  font-family: "Bungee Spice", sans-serif;
+  font-family: "Rubik Lines", system-ui;
+  font-size: 25px;
+  border-radius: 0.5rem;
+}
+
+.cuerpo {
+  background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTNlNTU0ZTMzNThibmQ5eWczOXF3cHRicW9ncWZnbTYzenkwNzdyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4KihuqeuJEi9qLSM/giphy.gif");
+  background-size: cover;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: aliceblue;
+  font-size: large;
+  font-family: "Bungee Spice", sans-serif;
+  font-family: "Rubik Lines", system-ui;
+  border-radius: 0.5rem;
+}
+
+.centrarfotos {
+  display: inline;
+  justify-content: center;
+  color: aliceblue;
+  font-size: large;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Bungee Spice", sans-serif;
+  font-family: "Rubik Lines", system-ui;
+  border-radius: 0.5rem;
+}
+
+.centrargris {
+  display: block;
+  justify-content: center;
+  color: aliceblue;
+  font-size: large;
+  background-color: gray;
+  border: solid 3px black;
+  border-style: ridge;
+  font-family: "Bungee Spice", sans-serif;
+  font-family: "Rubik Lines", system-ui;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-style: oblique;
+}
+
+.fotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(248, 127, 13, 0.781);
+  background-color: orange;
+}
+
+.fotos:hover {
+  border: 1px solid rgba(255, 255, 255, 0.603);
+}
+
+.fotos img {
+  width: 100%;
+  height: auto;
+}
+
+/* SI LA PANTALLA ES MAYOR ----------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  .fondo-gris {
+    display: flex;
+    justify-content: center;
+    opacity: 85%;
+    width: 800;
+    height: 800;
+  }
+  .lista {
+    font-size: larger;
+    justify-content: center;
+    display: flex;
+    border: solid 4px rgb(72, 146, 121);
+    border-style: double;
+    background-color: green 72, 146, 121;
+  }
+  .cuerpo {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTNlNTU0ZTMzNThibmQ5eWczOXF3cHRicW9ncWZnbTYzenkwNzdyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4KihuqeuJEi9qLSM/giphy.gif");
+    background-size: cover;
+  }
+  .centrar {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: x-large;
+  }
+  .centrargris {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: x-large;
+    background-color: gray;
+    border: solid 3px black;
+    border-style: ridge;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    color: rgb(175, 71, 11);
+    font-style: oblique;
+  }
+  .fotos {
+    display: flex;
+    background-color: rgb(212, 96, 19);
+  }
+  .fotos div {
+    background-color: 0;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+  }
+  .boton {
+    transition: transform 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+  }
+  .boton:hover {
+    transform: translateY(-10px);
+  }
+  .boton2 {
+    transition: transform 0.3s ease 0s;
+  }
+  .boton2:hover {
+    transform: scale(1.2);
+  }
+  /* SLIDER______________________________________________________*/
+  .contenedor {
+    padding: 2rem;
+  }
+  .slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  .slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+  }
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  .slider-nav a:hover {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
